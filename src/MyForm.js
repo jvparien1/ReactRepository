@@ -11,7 +11,7 @@ class MyForm extends React.Component {
 
         return (
             <form>
-            <h1>Hello</h1>
+            <h1>Hello user</h1>
             <p>Enter your name:</p>
             <input type="text" />
             </form>
