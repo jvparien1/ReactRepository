@@ -8,7 +8,7 @@ class Car extends React.Component {
             make: "Chrysler",
             model: "Sebring",
             year: 2008,
-            color: "Gold"
+            color: "Silver"
         };
     }
 
