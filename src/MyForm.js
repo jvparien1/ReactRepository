@@ -1,4 +1,5 @@
 import React from 'react';
+import './MyForm.css'
 
 
 class MyForm extends React.Component {
@@ -67,11 +68,11 @@ class MyForm extends React.Component {
                 <option value="Canada">Canada</option>
             </select>
             </div>
-            <div style={{width: "100%", float: "left"}}>
-            <input id="btnSubmit" type="button" value="Submit Form" onClick={this.inputSubmitHandler} />
+            <div style={{width: "100%", float: "left", marginTop: "2%"}}>
+            <input id="btnSubmit" className="btnAction" type="button" value="Submit Form" onClick={this.inputSubmitHandler} />
             </div>
             </form>
-            <span style={{color: "red"}}>{errorMessage}</span>
+            <span style={{color: "red", marginTop: "5%"}}>{errorMessage}</span>
             </div>
             
         );

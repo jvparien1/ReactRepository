@@ -1,0 +1,30 @@
+.btnAction {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+.btnAction:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btnAction:active {
+	position:relative;
+	top:1px;
+}
+.btnAction:disabled {
+	position:relative;
+    background-color: #dddddd;
+    background: linear-gradient(to bottom, #dddddd 5%, #dddddd 100%);
+    color: black;
+    cursor: not-allowed;
+}
