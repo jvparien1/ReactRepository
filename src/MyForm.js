@@ -44,24 +44,34 @@ class MyForm extends React.Component {
         let errorMessage = this.state.errorMessage;
 
         return (
-            <div>
+            <div style={{width: "100%"}}>
             <form>
             {header}
+            <div style={{width: "25%", float: "left"}}>
             <p>Enter your name:</p>
             <input type="text" name='username' onChange={this.inputChangeHandler} />
+            </div>
+            <div style={{width: "25%", float: "left"}}>
             <p>Enter your age:</p>
             <input type='text' name='age' onChange={this.inputChangeHandler} />
+            </div>
+            <div style={{width: "25%", float: "left"}}>
             <p>Notes:</p>
             <input type='textarea' name='textMessage' onChange={this.inputChangeHandler} />
+            </div>
+            <div style={{width: "25%", float: "left"}}>
             <p>Country of residence:</p>
             <select value={this.state.countrySelected} name="countrySelected" onChange={this.inputChangeHandler} >
                 <option value="Spain">Spain</option>
                 <option value="USA">USA</option>
                 <option value="Canada">Canada</option>
             </select>
+            </div>
+            <div style={{width: "100%", float: "left"}}>
             <input id="btnSubmit" type="button" value="Submit Form" onClick={this.inputSubmitHandler} />
+            </div>
             </form>
-            {errorMessage}
+            <span style={{color: "red"}}>{errorMessage}</span>
             </div>
             
         );
